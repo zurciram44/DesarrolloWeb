@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .text-right {
+            text-align: right;
+        }
+        
+        .eliminar {
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+    <title>Factura</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr id="filaTitulos">
+                <th>Clave</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Unidades</th>
+                <th>Importe</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="partidas">
+            <button id="agregar">Añadir partida</button>
+            <tr>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="filaSubtotal">
+                <td class="text-right" colspan="3">Subtotal : $</td>
+                <td class="text-right" id="subtotal">0.0</td>
+            </tr>
+
+            <tr id="filaIVA">
+                <td class="text-right" colspan="3">IVA : $</td>
+                <td class="text-right" id="iva">0.0</td>
+            </tr>
+
+            <tr id="filaTotal">
+                <td class="text-right" colspan="3">Total : $</td>
+                <td class="text-right" id="total">0.0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="Factura.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
